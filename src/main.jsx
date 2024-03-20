@@ -1,10 +1,17 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import store from './store'
+import App from './containers/'
+import './unit/const'
+import './control'
+import { subscribeRecord } from './unit'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+subscribeRecord(store) // 将更新的状态记录到localStorage
+
+render(
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
+  document.getElementById('root')
 )
