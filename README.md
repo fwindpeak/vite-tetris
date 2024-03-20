@@ -1,8 +1,10 @@
-# React + Vite
+# react-tetris
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+俄罗斯方块游戏
 
-Currently, two official plugins are available:
+原版：[https://github.com/chvin/react-tetris](https://github.com/chvin/react-tetris)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 修改的地方
+
+- 由`webpack`构建改为`vite`
+- 按键布局改为方向键在左侧
