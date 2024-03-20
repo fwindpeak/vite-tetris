@@ -6,6 +6,7 @@ import { resolve } from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: './',
   plugins: [
     react()],
   resolve: {
@@ -17,7 +18,7 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: ['react', 'react-dom'],
+      external: [],
       // ...其他 rollup 配置
     },
   }
